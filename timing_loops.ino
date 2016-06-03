@@ -7,16 +7,16 @@
 			     the included code (by subtracting the time for an empty for loop)
 */
 
-int monBouton = 2; // bouton en broche 2
+const int monBouton = 2; // bouton en broche 2
 const int monBoutonConst = 2; // bouton en broche 2
-int compteur = 0; // un compteur
-int etatBouton; // L'état du bouton 
-long time = 0;
-int longI=0;
-int intI=0;
-long intDureeBouclesVides=0;
-const int nbBouclesInt=10000;
-const long nbBouclesLong=10000;
+unsigned int compteur = 0; // un compteur
+unsigned int etatBouton; // L'état du bouton 
+unsigned long time = 0;
+unsigned long longI=0;
+unsigned int intI=0;
+unsigned long intDureeBouclesVides=0;
+unsigned const int nbBouclesInt=10000;
+unsigned const long nbBouclesLong=10000;
   
 void setup() {   
   pinMode(monBouton, INPUT);
