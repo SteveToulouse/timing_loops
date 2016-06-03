@@ -1,3 +1,12 @@
+/*
+  Timing experiments on Arduino. This version tested on Genuino Uno R3
+  
+  Principle : 1) Measure an empty for loop, using microsecondes time function.
+              2) Measure the desired instruction/block/function using the same for loop structure
+			  3) Print total time of the for loop and then the time taken by
+			     the included code (by subtracting the time for an empty for loop)
+*/
+
 int monBouton = 2; // bouton en broche 2
 const int monBoutonConst = 2; // bouton en broche 2
 int compteur = 0; // un compteur
@@ -9,7 +18,7 @@ long intDureeBouclesVides=0;
 const int nbBouclesInt=10000;
 const long nbBouclesLong=10000;
   
-void setup() {   // le bouton en entrée   
+void setup() {   
   pinMode(monBouton, INPUT);
   Serial.begin(9600);
 } 
